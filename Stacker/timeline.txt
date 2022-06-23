@@ -1,0 +1,9 @@
+v1
+// format:
+// object type; start time; position; velocity; acceleration; lifespan
+
+[Timeline]
+PLAYER;200,200
+PARTICLE;0;100,100;100,0;1000,0;1000
+PARTICLE;300;100,150;100,0;0,1000;700
+PARTICLE;600;100,200;100,0;0,0;900

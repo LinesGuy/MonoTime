@@ -1,15 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MonoTime;
 
 namespace Stacker
 {
-    public class Game1 : Game
+    public class GameRoot : Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
-        public Game1()
+        private Timeline _timeline;
+        public GameRoot()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -18,6 +19,7 @@ namespace Stacker
 
         protected override void Initialize()
         {
+            _timeline = new Timeline();
             // TODO: Add your initialization logic here
 
             base.Initialize();
